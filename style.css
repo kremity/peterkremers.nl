@@ -1,0 +1,308 @@
+/* ---- Main section ---- */
+/* Custom fonts */
+@font-face {
+    font-family: 'Tenorite';
+    src: url(fonts/29595851800.ttf);
+  }
+
+@font-face {
+font-family: 'Tenorite Italic';
+src: url(fonts/26622973498.ttf);
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+/* margin 0 and padding 0 for all elements + border-box to resize the window */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tenorite', sans-serif;
+    color: #A9A196;
+}
+
+/* ---- HEADER ---- */
+.header {
+    /* outline: solid purple; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    padding: .5em .5em 8em 1em;
+    background-color: #1A1E22;
+}
+
+    .header-text {
+        /* outline: solid purple; */
+        font-family: 'Tenorite Italic', sans-serif;
+        font-style: italic;
+        font-size: 14px;
+        color: #D78450;
+    }
+
+/* ---- LANGUAGE BUTTONS ---- */
+.language-button-container {
+    /* outline: solid red; */
+    text-align: center;
+    padding: 10px;
+    background-color: #292D35;
+    padding: 0em 0em 2em 0em;
+}
+
+    .translate-button {
+        background-color: #20232A;
+        color: #A9A196;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .translate-button-seprator {
+        background-color: #292D35;
+        color: #A9A196;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+/* ---- MAIN CONTAINER ---- */
+.main-container {
+    /* outline: solid red; */
+    background-color: #20232A;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+    /* ---- SIDEBAR ---- */
+    .sidebar-container {
+        /* outline: solid gray; */
+        background-color: #292D35;
+        color: #A9A196;
+        display: flex;
+        flex: 15%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: left;
+        max-width: 410px;
+        margin-top: -120px; /* For overlapping profilepicture! */
+        /* padding-left: 35px;
+        padding-right: 25px; */
+    }
+        .sidebar-container-text {
+            /* outline: solid orange; */
+            display: flex;
+            flex-direction: column;
+            align-content: left;
+        }
+
+        .profilepicture {
+            /* outline: solid green; */
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            height: 300px;
+            width: 300px;
+            border-radius: 150px;
+            transition: transform .2s;
+        } .profilepicture:hover {transform: scale(1.05);}
+
+        .peter-kremers-header {
+            /* outline: solid yellowgreen; */
+            text-align: center;
+            padding: 2em .5em .5em .5em;
+        }
+
+            .personal-stats-text {
+                /* outline: solid black; */
+                text-align: center;
+                padding: 0em .5em .5em .8em;
+                /* max-width: 350px; */
+            }
+        
+        .socials {
+            /* outline: solid blue; */
+            display: flex;
+            justify-content: space-evenly;
+            padding: .5em;
+    
+        }
+
+            .gmail {
+                height: 30px;
+                width: 38px;
+                filter: grayscale(70%);
+                transition: transform .2s;
+            } .gmail:hover { transform: scale(1.1);}
+            
+            .linkedin {
+                height: 35px;
+                width: 35px;
+                filter: grayscale(60%);
+                transition: transform .2s;
+            } .linkedin:hover { transform: scale(1.1);}
+            
+            .credly {
+                height: 34px;
+                width: 67px;
+                filter: grayscale(50%);
+                transition: transform .2s;
+            } .credly:hover { transform: scale(1.1);}
+
+        .introtext-header {
+            /* outline: solid black; */
+            text-align: left;
+            padding: .5em;
+            margin-left: 35px;
+            margin-right: 25px;
+        }
+
+            .introtext {
+                /* outline: solid black; */
+                text-align: justify;
+                text-justify: inter-word;
+                padding: .5em .7em .5em .7em;
+                margin-left: 35px;
+                margin-right: 25px;
+            }
+
+            .toolslist {
+                /* outline: solid firebrick; */
+                padding-top: .8em;
+                padding-left: 1.5em;
+            }
+
+    /* ---- CONTENT CONTAINER ---- */
+    .content-container {
+        /* outline: solid green; */
+        display: flex;
+        flex: 15%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: left;
+        align-items: left;
+        width: 100%;
+        padding: 25px;
+    }
+
+        .h3 {
+            display: inline;
+            line-height: 1em;
+        }
+
+        .h5 {
+            display: inline; 
+            line-height: 2.5em;
+        }
+
+        .work {
+            /* outline: solid purple; */
+            border-radius: 20px;
+            background-color: #292D35;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+            .header-work {
+                /* outline: solid purple; */
+                margin-right: 1em;
+                line-height: 1.1em;
+            }
+
+            .title-work {
+                line-height: 1.2em;
+            }
+
+            .timeline-work {
+                display: inline; 
+                line-height: 2em;
+            }
+
+            .function-work {
+                display: inline; 
+                line-height: 1.5em;
+            }
+
+            .work-text {
+                /* outline: solid salmon; */
+                text-align: left;
+                text-justify: inter-word;
+                line-height: normal;
+                padding-top: .2em;
+                padding-left: 0em;
+                padding-right: .2em;
+                padding-bottom: .2em;
+            }
+
+            .work-child {
+                /* outline: solid salmon; */
+                border-radius: 20px;
+                background-color: #292d3563;
+                display: block;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                text-align: left;
+                margin-bottom: 20px;
+                padding: 20px;
+                margin-left: 35px;
+            }
+
+    /* ---- FOOTER ----
+    .footer {
+        outline: solid purple;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: relative;
+        padding: .1em .5em 8em 1em;
+        background-color: #1A1E22;
+    }
+
+        .footer-socials {
+            outline: solid blue;
+            display: flex;
+            justify-content: space-evenly;
+            padding: .5em;
+        } */
+
+@media screen and (max-width: 900px) {
+        .main-container {
+        /* outline: solid red; */
+        background-color: #20232A;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: stretch;
+        width: 100%;
+        }
+
+        .sidebar-container {
+        /* outline: solid gray; */
+        background-color: #292D35;
+        border-radius: 20px;
+        color: #A9A196;
+        display: flex;
+        flex: 15%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: left;
+        max-width: 100%;
+        margin-top: -120px; /* For overlapping profilepicture! */
+        }
+
+        .work-child {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
