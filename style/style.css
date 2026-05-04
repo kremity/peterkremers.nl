@@ -130,15 +130,14 @@
             display: flex;
             justify-content: space-evenly;
             padding: .5em;
-    
         }
 
-            .gmail {
+            /* .gmail {
                 height: 30px;
                 width: 38px;
                 filter: grayscale(70%);
                 transition: transform .2s;
-            } .gmail:hover { transform: scale(1.1);}
+            } .gmail:hover { transform: scale(1.1);} */
             
             .linkedin {
                 height: 35px;
